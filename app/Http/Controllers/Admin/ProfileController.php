@@ -45,7 +45,7 @@ class ProfileController extends Controller
         $this->validate($request, Profile::$rules);
         
         $profile = Profile::find($request->id);
-        $news_form = $request->all();
+        $profile_form = $request->all();
         unset($profile_form['_token']);
         $profile->fill($profile_form)->save();
         
