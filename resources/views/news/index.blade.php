@@ -1,6 +1,9 @@
 @extends('layouts.front')
+@section('title', 'Mynews')
+
 
 @section('content')
+    <p>aiueo</p>
     <div class="container">
         <hr color="#c0c0c0">
         @if (!is_null($headline))
